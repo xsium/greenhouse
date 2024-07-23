@@ -1,0 +1,195 @@
+body{
+    background-color: #F2F2F2;
+}
+
+/*header*/
+header{
+    background-color: black;
+}
+header .nav-item a{
+    color: white;
+    font-size: 1.8rem;
+    width: 175px;
+}
+.nav-item a:active{
+    color: #2E6723;
+}
+.nav-item a:hover{
+    color: #2E6723;
+}
+.active{
+    color: #2E6723 !important;
+}
+#logo{
+    width: 250px;
+}
+.profil{
+    width: 100px;
+}
+
+*:focus {
+    box-shadow: none !important;
+}
+
+
+
+/*footer*/
+footer{
+    background-color: black;
+}
+.logo{
+    filter: invert(1);
+}
+footer li{
+    margin-bottom: 2em;
+}
+footer .nav-item a{
+    color: white;
+}
+footer div div:last-of-type{
+    margin-top: 2em;
+}
+
+
+/*searchbar*/
+.container form .search {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 150px;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  transition: all 1s;
+  z-index: 3;
+}
+.container .search img{
+    margin: auto;
+    filter: invert(1);
+}
+.container .search:hover {
+  cursor: pointer;
+}
+.container>form>input {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 150px;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border: 2px solid #2E6723;
+  background: black;
+  color: white;
+  padding: 0 80px 0 20px;
+  transition: all 1s;
+  opacity: 0;
+  z-index: 4;
+  letter-spacing: 0.1em;
+}
+.container input:hover {
+  cursor: pointer;
+}
+.container input:focus {
+  width: 250px;
+  padding-left: 50px;
+  opacity: 1;
+  cursor: text;
+}
+.container input:focus ~ .search {
+  right: 400px;
+  background: transparent;
+  z-index: 5;
+}
+
+/*hero section */
+
+.titre{
+    text-align: center;
+    color: #2E6723;
+    font-size: 5rem;
+}
+#boutonAdd{
+    width: 100%;
+}
+.hero{
+    margin: auto;
+}
+#addplant{
+    border:2px solid #2E6723;
+    border-radius: 20px;
+    background-color: #2E6723;
+    text-align: center;
+    font-size: 2rem;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 8%;
+    margin-top: 8%;
+    color: #F2F2F2;
+}
+
+/*carousel*/
+.greenbutton{
+    color: #2E6723;
+}
+
+
+
+
+@media (max-width: 991px) {
+    header .nav-item a{
+        font-size: 1rem;
+    }
+    .container form .search{
+        right:10px;
+        margin-bottom: 0;
+        bottom: 5px;
+    }
+    .container input:focus ~ .search {
+        right: 210px;
+      }
+    .container form input{
+        right:10px;
+        margin-bottom: 0;
+        bottom: 5px;
+    }
+
+}
+
+
+
+
+/*version mobile */
+@media (max-width: 575px){
+ header{
+    display: none;
+ }
+ .pc{
+    display:none !important;
+ }
+ .mobile{
+    display: block !important;
+ }
+ 
+footer{
+    margin-bottom: 7vh;
+}
+footer .navbar-brand img{
+    height: 35px;
+}
+header{
+    display: block !important;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    z-index: 6;
+}
+header span{
+    background-color: #2E6723;
+}
+header button{
+    margin: 0px auto;
+}
+}
